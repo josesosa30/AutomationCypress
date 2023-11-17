@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Pruebas con Cypress</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+<body>
+
+    <header>
+        <img src="Logo_Blanco.png" alt="AKYO" class="logo">
+        <h1>Pruebas con Cypress - Página Principal</h1>
+        <div class="search-form">
+            <input type="text" id="searchInput" class="search-input" placeholder="Buscar por nombre">
+            <button id="searchButton" class="search-button">Buscar</button>
+        </div>
+    </header>
+
+    <div id="loginForm">
+        <h2>Formulario de Inicio de Sesión</h2>
+        <form action="login.php" method="post">
+            <label for="username">Nombre de usuario:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Iniciar Sesión</button>
+        </form>
+    </div>
+
+    <div id="userTable">
+        <h2>Tabla de Usuarios</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Correo</th>
+                </tr>
+            </thead>
+            <tbody id="userTableBody">
+                <!-- Filas de usuarios se cargarán aquí con JavaScript -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
